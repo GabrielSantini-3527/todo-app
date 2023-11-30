@@ -7,10 +7,10 @@
                     <input type="checkbox" id="tarefa-{{this.id}}" onchange="completarTarefa({{this.id}})">
                     <label for="tarefa-{{this.id}}">{{this.descricao}}</label>
                 </div>
-
-                <button>
+                <button onclick="excluirTarefa({{this.id}})">
                     <img src="/imagens/x-icon.png" alt="Ícone de X para excluir uma tarefa">
                 </button>
+            </form>
             </form>
         </div>
         {{/each}}
@@ -23,7 +23,7 @@
                 <a href="/completas">Completas</a>
             </div>   
 
-            <a href="">Limpar tarefas</a>
+            <a href="/limparTarefas">Limpar tarefas</a>
         </div>
     </section>
 
